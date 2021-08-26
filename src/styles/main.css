@@ -1,0 +1,182 @@
+/* MAIN */
+
+
+:root {
+    --listHeaderHeight: 80px;
+    --backgroundMain: #fff;
+    --backgroundDark: #eee;
+    --colorSecondary: #ccc;
+    --colorMain: #000000;
+    /*4D4D4D*/
+    /*2C2C2C*/
+}
+
+.viewportFix {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+}
+
+.button {
+    min-width: 70px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid var(--colorSecondary);
+    font-weight: 500;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.listHeader {
+    min-height: var(--listHeaderHeight);
+    max-height: var(--listHeaderHeight);
+    height: var(--listHeaderHeight);
+}
+
+.listContainer {
+    max-height: calc(100% - var(--listHeaderHeight));
+    /*height: calc(100% - var(--listHeaderHeight));*/
+    overflow-y: auto;
+}
+
+.listInput {
+    width: 90%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 1px solid var(--colorSecondary);
+}
+
+.listItem {
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+.listItem:nth-child(2n) {
+
+}
+
+/* COLORS */
+
+.colorMain {
+    color: var(--colorMain);
+}
+
+.backMain {
+    background: var(--backgroundMain);
+}
+
+.backDark {
+    background: var(--backgroundDark);
+}
+
+/* HELPERS */
+
+.ta-center {
+    text-align: center;
+}
+
+.br-5 {
+    border-radius: 5px;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt--10 {
+    margin-top: -10px;
+}
+
+.mt--50 {
+    margin-top: -50px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-10-20 {
+    padding: 10px 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.fd-column {
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.h-100p {
+    height: 100%;
+}
+
+@media screen and (min-width: 420px) {
+    .wrapper {
+        margin: 0 auto;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+}
